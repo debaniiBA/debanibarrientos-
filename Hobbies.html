@@ -2,13 +2,48 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width= , initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hobbies</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh; /* Ajusta la altura del fondo al 100% de la ventana */
+            background: linear-gradient(45deg, #ffcc00, #ff0066, #9900ff);
+            background-size: 400% 400%;
+            animation: animateBackground 10s linear infinite;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @keyframes animateBackground {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        h1, p {
+            text-align: center;
+        }
+
+        img {
+            display: block;
+            margin-top: 20px; /* Ajusta el espacio entre la foto y el texto */
+        }
+    </style>
     <li><a href="index.html">INICIO</a>
-    </head>
-    <body>
-        <h1>Pasatiempos</h1>
-        <p>Ir de compras con mi mejor amigo</p>
-        <img width="560" height="350"  src="BOLSA HM.jpeg" alt="">
-    
-    </body>
+</head>
+<body>
+    <h1>Pasatiempos</h1>
+    <p>Ir de compras con mi mejor amigo</p>
+    <img width="560" height="350" src="BOLSA HM.jpeg" alt="">
+</body>
+</html>

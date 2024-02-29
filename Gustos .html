@@ -2,19 +2,50 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width= , initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gustos</title>
     <li><a href="index.html">INICIO</a>
-    </head>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background: linear-gradient(45deg, #ffcc00, #ff0066, #9900ff);
+            background-size: 400% 400%;
+            animation: animateBackground 10s linear infinite;
+        }
+
+        @keyframes animateBackground {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        /* Estilos para el contenido */
+        h1, p {
+            text-align: center;
+            margin-top: 50px;
+            color: white;
+        }
+
+        img, iframe {
+            display: block;
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+    </style>
+</head>
 <body>
     <h1>Gustos</h1>
     <p></p>
     <img width="560" height="315" src="CENA.jpeg" alt="Anuel">
-    <H1>CANCION FAVORITA</H1>
+    <h1>CANCION FAVORITA</h1>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/iuyKJuF8j7E?si=U-hJGvazrbbZIBhI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>    
-    
-
 </body>
-
-
 </html>

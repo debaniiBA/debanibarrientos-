@@ -3,142 +3,99 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Document</title>
-<li><a href="index.html">INICIO</a>
+<title>FORMULARIO</title>
+<link rel="stylesheet" href="index.html">
 
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        background: linear-gradient(45deg, #ffcc00, #ff0066, #9900ff);
+        background-size: 400% 400%;
+        animation: animateBackground 10s linear infinite;
+        border-top: 10px solid #ff0066;
+        border-bottom: 10px solid #ff0066;
+        border-left: 10px solid #ffcc00;
+        border-right: 10px solid #ffcc00;
+    }
+
+    @keyframes animateBackground {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
+    /* Estilos para el contenido */
+    main {
+        padding: 20px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    input[type="file"],
+    input[type="range"],
+    input[type="color"],
+    input[type="week"],
+    textarea {
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 10px;
+    }
+</style>
 </head>
 <body>
 <header> 
-<h1> FORMULARIOS </h1>
-<nav>
+    <h1> FORMULARIOS </h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">INICIO</a></li>
+        </ul>
+    </nav>
 </header>
 <main> 
-<h2> MAIN</h2>
-<form action="">
-<div>
-<label for="nombre"> nombre: </label>
-<input type="text" name="fechaNAC" id="fechaNAC">
-</div>
-<div>
-<label for="fechaNAC"> Fecha Nacimiento </label>
-<input type="date" name="fechaNAC" id="fechaNAC">
-</div>  
-
-<div>
-<label for="foto"> Foto perfil </label>
-<input type="file" name="foto" id="foto">  
-</div>
-
- 
-
-         <div>
-<label for="semestre"> Semestre: </label>
-<input type="range" min="1" max="9" name="semestre" id=" semestre">  
-</div>
-
- 
-
-         <div>
-<label for="colorFav"> colorFav: </label>
-<input type="color" name="colorFav" id=" colorFav">  
-</div>
-
- 
-
-         <div>
-<label for="semanaNac"> semanaNac: </label>
-<input type="week" name="semanaNac" id=" semanaNac">  
-</div>
-
- 
-
- 
-
-         <div>
-<label for="ob"> observaciones: </label>
-<textarea type="ob" name="ob" id=" ob" cols="30" rows="10"></textarea>
-</div>
-
- 
-
-         <div>
-<label for="curso" > curso: </label>
-<select name="curso" id="curso">
-<option value="3">python</option>
-<option value="45">JAVA</option>
-<option value="32">C#</option>
-<option value="4">R</option>
-<option value="100">Julia</option>
-
- 
-
-            </select>
-
-</div>
-
- 
-
-         <div>
-<label for="curso 2"> curso 2: </label>
-<select name="curso2" id="curso2" multiple>
-<option value="3">python</option>
-<option value="45">JAVA</option>
-<option value="32">C#</option>
-<option value="4">R</option>
-<option value="100">Julia</option>
-
- 
-
-            </select>
-</div>
-
- 
-
- 
-
-         <div>
-<label for="curso 3"> curso 3: </label>
-<select name="curso3" id="curso3">
-<optgroup label="INCLUYE CERTIFICACION">
-<option value="3">python</option>
-<option value="45">JAVA</option>
-<option value="32">C#</option>
-</optgroup>
-
-<optgroup label="NO INCLUYE CERTIFICACION"> 
-<option value="4">R</option>
-<option value="100">Julia</option>
-</optgroup>
-
- 
-
-            </select>
-</div>
-<input type="button" value="Guardar">
-<input type="submit" value="Guardar">
-<input type="reset" value="borrar">
-<button> Guardar</button>
-<a href="#"> Guardar</a>
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-        </form>
+    <h2> MAIN</h2>
+    <form action="">
+        <div>
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre">
+        </div>
+        <div>
+            <label for="fechaNAC">Fecha Nacimiento:</label>
+            <input type="date" name="fechaNAC" id="fechaNAC">
+        </div>  
+        <div>
+            <label for="foto">Foto perfil:</label>
+            <input type="file" name="foto" id="foto">  
+        </div>
+        <div>
+            <label for="semestre">Semestre:</label>
+            <input type="range" min="1" max="9" name="semestre" id="semestre">  
+        </div>
+        <div>
+            <label for="colorFav">Color Favorito:</label>
+            <input type="color" name="colorFav" id="colorFav">  
+        </div>
+        <div>
+            <label for="semanaNac">Semana Nacimiento:</label>
+            <input type="week" name="semanaNac" id="semanaNac">  
+        </div>
+        <div>
+            <label for="ob">Observaciones:</label>
+            <textarea name="ob" id="ob" cols="30" rows="10"></textarea>
+        </div>
+    </form>
 </main>
-<aside>
-<h2> ASIDE</h2>
-</aside>
-<footer>
-<h2> FOOTER</h2>
-</footer>
 </body>
 </html>

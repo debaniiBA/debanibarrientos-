@@ -3,9 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> EVIDENCIAS &hearts;</title>
-    <li><a href="formulario.html">formulario</a></li>
-    <li><a href="Gustos .html">Gustos</a></li>
-    <li><a href="Hobbies.html">Tablas</a>
-    <li><a href="tablas.html">Tablas</a>
+    <title>EVIDENCIAS &hearts;</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: changeColor 10s infinite;
+        }
+
+        @keyframes changeColor {
+            0% { background-color: #ffcc00; }
+            25% { background-color: #ff0066; }
+            50% { background-color: #9900ff; }
+            75% { background-color: #00ffcc; }
+            100% { background-color: #ffcc00; }
+        }
+
+        /* Estilos para los enlaces */
+        nav {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 24px;
+            margin: 0 20px;
+        }
+    </style>
 </head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="Formulario.html">Formulario</a></li>
+            <li><a href="Gustos .html">Gustos</a></li>
+            <li><a href="Hobbies.html">Hobbies</a></li>
+            <li><a href="tablas.html">Tablas</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

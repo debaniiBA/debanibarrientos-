@@ -2,49 +2,90 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <li><a href="index.html">INICIO</a>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background: linear-gradient(45deg, #ffcc00, #ff0066, #9900ff);
+            background-size: 400% 400%;
+            animation: animateBackground 10s linear infinite;
+        }
 
+        @keyframes animateBackground {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+        
+        /* Estilos para las tablas */
+        table {
+            margin: 20px auto;
+            border-collapse: collapse;
+            width: 80%;
+            max-width: 800px;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 2px solid black;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        td {
+            background-color: #ffffff;
+        }
+    </style>
+    <li><a href="index.html">INICIO</a>
 </head>
 <body>
-    <h2> Tabla simple </h2>
+    <h2>Tabla simple</h2>
     <table border="2">
         <tr>
             <th>C++</th>
             <th>1980</th>
             <th>Multiplataforma</th>
-            
         </tr>
         <tr>
             <th>C</th>
             <th>1955</th>
             <th>Multiplataforma</th>
         </tr>
-    
     </table>
+
     <table border="2">
-        <td>Actividad</td>
-        <td>Lunes</td>
-        <td>Martes</td>
-        <td>Miercoles</td>
-        <td>Jueves</td>
-        <td>Viernes</td>
-    
         <tr>
-            <td>7:00 a 8:00</td>
-            <td>Natacion</td>
+            <td>Actividad</td>
             <td>Lunes</td>
             <td>Martes</td>
-            <td>Miercoles</td>
+            <td>Miércoles</td>
             <td>Jueves</td>
             <td>Viernes</td>
-        
         </tr>
-        
+        <tr>
+            <td>7:00 a 8:00</td>
+            <td>Natación</td>
+            <td>Lunes</td>
+            <td>Martes</td>
+            <td>Miércoles</td>
+            <td>Jueves</td>
+            <td>Viernes</td>
+        </tr>
         <tr>
             <td>8:00 a 9:00</td>
-            <td>Curso de ruby</td>
+            <td>Curso de Ruby</td>
             <td>Lunes</td>
             <td>Martes</td>
             <td colspan="3"></td>
@@ -52,42 +93,38 @@
             <td>Viernes</td>
         </tr>
     </table>
+
     <hr>
 
     <table border="1px">
         <thead>
             <tr>
-                <td colspan="3">Facultad de contaduria publica y administracion</td>
+                <td colspan="3">Facultad de Contaduría Pública y Administración</td>
             </tr>
             <tr>
                 <td>Carrera</td>
                 <td>Siglas</td>
-                <td>Año creacion</td>
+                <td>Año Creación</td>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>Licenciatura en tecnologias de la informacion</td>
+                <td>Licenciatura en Tecnologías de la Información</td>
                 <td>LTI</td>
                 <td>1970</td>
             </tr>
-    
+            <tr>
+                <td>Licenciatura en Administración</td>
+                <td>LA</td>
+                <td>1985</td>
+            </tr>
         </tbody>
-           <tr>
-            <td>Licenciatura en administracion</td>
-            <td>LA</td>
-            <td>1985</td>
-        </tr></tr>
-        
-           
-        </tr>
-          
         <tfoot>
             <tr>
-                <td colspan="3">Fecha de elaboracion: 15-02-2024</td>
+                <td colspan="3">Fecha de Elaboración: 15-02-2024</td>
             </tr>
             <tr> 
-                <td colspan="3"> &copy;Derechos reservados.</td>
+                <td colspan="3">&copy; Derechos Reservados.</td>
             </tr>
         </tfoot>
     </table>
