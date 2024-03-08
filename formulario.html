@@ -1,59 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FORMULARIO</title>
-<link rel="stylesheet" href="index_debaniiBA.html">
-
-<style>
-    body {
-        margin: 0;
-        padding: 0;
-        height: 100%;
-        background: linear-gradient(45deg, #ffcc00, #ff0066, #9900ff);
-        background-size: 400% 400%;
-        animation: animateBackground 10s linear infinite;
-        border-top: 10px solid #ff0066;
-        border-bottom: 10px solid #ff0066;
-        border-left: 10px solid #ffcc00;
-        border-right: 10px solid #ffcc00;
-    }
-
-    @keyframes animateBackground {
-        0% {
-            background-position: 0% 50%;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background: linear-gradient(45deg, #ffcc00, #ff0066, #9900ff);
+            background-size: 400% 400%;
+            animation: animateBackground 10s linear infinite;
         }
-        50% {
-            background-position: 100% 50%;
+
+        @keyframes animateBackground {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
         }
-        100% {
-            background-position: 0% 50%;
+
+        /* Estilos para el contenido */
+        main {
+            padding: 20px;
+            border: 4px solid black; /* Agrega un borde negro de 4px alrededor del formulario */
+            margin: 20px; /* Añade margen alrededor del formulario */
         }
-    }
 
-    /* Estilos para el contenido */
-    main {
-        padding: 20px;
-    }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
 
-    label {
-        display: block;
-        margin-bottom: 5px;
-    }
-
-    input[type="text"],
-    input[type="date"],
-    input[type="file"],
-    input[type="range"],
-    input[type="color"],
-    input[type="week"],
-    textarea {
-        width: 100%;
-        padding: 5px;
-        margin-bottom: 10px;
-    }
-</style>
+        input[type="text"],
+        input[type="date"],
+        input[type="file"],
+        input[type="range"],
+        input[type="color"],
+        input[type="week"],
+        textarea {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
 <header> 

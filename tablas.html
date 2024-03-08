@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <li><a href="index.html">INICIO</a>
+
     <style>
         body {
             margin: 0;
@@ -28,6 +30,61 @@
         
         /* Estilos para las tablas */
         table {
+            width: 80%;
+            margin: 50px auto;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border: 2px solid transparent; /* Bordes transparentes inicialmente */
+        }
+
+        tr:nth-child(even) {
+            background-color: #ffcc00; /* Fondo de las filas pares */
+        }
+
+        tr:nth-child(odd) {
+            background-color: #ff0066; /* Fondo de las filas impares */
+        }
+
+        /* Estilos al pasar el cursor sobre las celdas */
+        th:hover, td:hover {
+            border-color: #9900ff; /* Cambio de color de borde al pasar el cursor */
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Encabezado 1</th>
+                <th>Encabezado 2</th>
+                <th>Encabezado 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Dato 1</td>
+                <td>Dato 2</td>
+                <td>Dato 3</td>
+            </tr>
+            <tr>
+                <td>Dato 4</td>
+                <td>Dato 5</td>
+                <td>Dato 6</td>
+            </tr>
+            <tr>
+                <td>Dato 7</td>
+                <td>Dato 8</td>
+                <td>Dato 9</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
+
             margin: 20px auto;
             border-collapse: collapse;
             width: 80%;
@@ -48,7 +105,6 @@
             background-color: #ffffff;
         }
     </style>
-    <li><a href="index.html">INICIO</a>
 </head>
 <body>
     <h2>Tabla simple</h2>
